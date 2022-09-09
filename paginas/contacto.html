@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEGUROS INTEGRO</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+    <main>
+        <div>
+            <header>
+                <h1>Contacto</h1>
+            </header>
+            <div class="contenedor">
+                <nav id="menu">
+                    <!-- INICIO MENU NAVEGACION-->
+                    <ul>
+                        <li class="botonav"><a href="../index.html">Inicio</a></li>
+                        <li class="botonav"><a href="nosotros.html">Nosotros</a></li>
+                        <li class="botonav"><a href="productos.html">Productos</a></li>
+                        <li class="botonav"><a href="compañias.html">Compañias</a></li>
+                        <li class="botonav"><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+                <!--FIN MENU DE NAVEGACION-->
+                <div class="main">
+
+                    <!-- COMIENZA EL FORMULARIO-->
+                    <form action="https://formspree.io/f/mpzbozba" method="POST">
+                        <fieldset>
+                            <legend>Datos Personales</legend>
+                            <label class="form-label">Nombre</label>
+                            <input class="form-control" type="text" placeholder="escribi tu nombre" name="nombre" /><br>
+                            <label class="form-label">Apellido</label>
+                            <input class="form-control" type="text" placeholder="escribi tu apellido" name="apellido" required /><br>
+                            <label class="form-label">E-mail</label>
+                            <input class="form-control"type="email" placeholder="escribi tu correo" name="email" required /><br>
+                        </fieldset><br>
+                        <label class="form-label" for="seguros">Seguros</label>
+                        <select class="form-select" name="seguros" id="seguros">
+                            <option value="auto">Auto</option>
+                            <option value="casa">Casa</option>
+                            <option value="vida">Vida</option>
+                        </select><br>
+                        <label class="form-label">Comentarios</label>
+                        <textarea class="form-control" name="comentarios"></textarea><br>
+                        <button  class="btn btn-primary" type="submit">Enviar</button>
+                    </form>
+                    <!--FIN DEL FORMULARIO-->
+                </div>
+
+            </div>
+
+            <footer>
+                <ul>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    <li><a href="https://es-la.facebook.com/">Facebook</a></li>
+                    <li><a href="https://outlook.live.com/owa/">Email</a></li>
+                </ul>
+            </footer>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
