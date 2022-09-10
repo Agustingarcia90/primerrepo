@@ -105,13 +105,15 @@ body main {
 
 /* INICIO FOOTER*/
 footer {
-    background-color: rgb(253, 253, 253);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(115,119,123,1) 100%, rgba(0,212,255,1) 100%);
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 8px;
     padding-bottom: 8px;
     position: absolute;
-    width: 96%;
+    width: 97%;
+   
 }
 
 footer ul {
@@ -143,7 +145,8 @@ footer ul li a {
 
 .titulonosotros {
     grid-area: titulonosotros;
-    background-color: #73777B;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(115,119,123,1) 100%, rgba(0,212,255,1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,13 +159,18 @@ footer ul li a {
 .imgnosotros {
     grid-area: imgnosotros;
     padding-top: 60px;
+    width: 500px;  
+}
+
+section img {
+    width: 500px;
+    height: 334px;
 }
 
 .subnosotros {
     color: beige;
     text-decoration: underline;
 }
-
 
 .txtnosotros {
     grid-area: txtnosotros;
@@ -215,7 +223,6 @@ footer ul li a {
         "footer footer footer"
 }
 
-
 .tituloprincipal {
     grid-area: titulo;
     background: rgb(2,0,36);
@@ -227,17 +234,15 @@ footer ul li a {
 
 .menu {
     grid-area: menu;
-
-
 }
 
 .aside {
     grid-area: aside;
 }
 
-.aside img {
-    height: 800px;
+aside img {
     width: 250px;
+    height: 890px;
 }
 
 .secindex {
@@ -259,14 +264,13 @@ footer ul li a {
     color: #c8c8c8;
 }
 
-.secindex2 {
+.secindex2 img {
     grid-area: secindex2;
 }
 
 .footer {
     grid-area: footer;
 }
-
 
 /* FIN PAGINA INDEX*/
 
