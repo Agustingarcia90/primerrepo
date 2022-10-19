@@ -24,7 +24,7 @@ h1 {
 
 h2 {
     font-family: 'Roboto', sans-serif;
-    color: #c8c8c8;
+    color: black;
     margin-top: 24px;
     margin-bottom: 24px;
     font-size: 25px;
@@ -67,41 +67,31 @@ nav {
     display: block;
 }
 
+.sticky-top {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+
+}
+
 nav ul a:hover {
-    background-color: #73777B;
+    background-color: black;
 }
 
 /* FIN MENU NAVEGACION*/
 
-/* INICIO PAGINA PRODUCTOS*/
-
-.seguroauto {
-    display: flex;
-    padding-bottom: 10px;
+.grilla {
+    padding: 24px;
 }
 
-.segurocasa {
-    display: flex;
-    padding-bottom: 20px;
+.grilla > div {
+    padding: 12px;
 }
 
-.segurovida {
-    display: flex;
-    padding-bottom: 15px;
+.grilla img {
+    margin-bottom: 12px;
 }
-
-.segurocomercio {
-    display: flex;
-    padding-bottom: 15px;
-}
-
-.seguroconsorcio {
-    display: flex;
-    padding-bottom: 15px;
-}
-
-/* FIN PAGINA PRODUCTOS*/
-
 
 /* INICIO PAGINA NOSOTROS*/
 
@@ -330,7 +320,7 @@ aside img {
 /* INICIO BOOTSTRAP*/
 
 body {
-    background-color: grey;
+    background-color: rgb(204, 199, 199);
 }
 
 /* INICIO BARRA DE NAVEGACION BOOTSTRAP*/
