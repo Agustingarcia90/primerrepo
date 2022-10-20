@@ -9,16 +9,16 @@
 }
 
 body {
-    background-color: #25316D
+    background-color: rgb(204, 199, 199);
 }
+
 
 h1 {
     color: black;
     padding: 5px;
     margin: 5px;
     font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    flex: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 }
 
@@ -33,7 +33,7 @@ h2 {
 p {
     line-height: 1.3;
     font-family: Georgia, 'Times New Roman', Times, serif;
-   
+
 }
 
 body main {
@@ -79,20 +79,46 @@ nav ul a:hover {
     background-color: black;
 }
 
+.bg-grey {
+    background-color: #25316D
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+    color: white;
+}
+
+.nav-link {
+    color: white;
+    font-size: 20px;
+}
+
+.logo {
+    border-radius: 30px;
+}
+
+.navbar-nav {
+    --bs-nav-link-hover-color: rgb(129, 129, 129);
+}
+
+.navbar-nav {
+    --bs-nav-link-hover-color: rgb(129, 129, 129);
+}
+
 /* FIN MENU NAVEGACION*/
 
 .grilla {
     padding: 24px;
 }
 
-.grilla > div {
+.grilla>div {
     padding: 12px;
     width: 50%;
 }
 
 
 @media screen and (max-width: 768px) {
-    .grilla > div {
+    .grilla>div {
         width: 100%;
     }
 }
@@ -103,147 +129,6 @@ nav ul a:hover {
 
 /* INICIO PAGINA NOSOTROS*/
 
-.paginanosotros {
-    display: grid;
-    grid-template-columns: 200px 500px 630px;
-    grid-template-rows: 150px 400px 400px;
-    grid-template-areas:
-        "titulonosotros titulonosotros titulonosotros"
-        "menu imgnosotros txtnosotros"
-        "footer footer footer"
-    ;
-}
-
-.titulonosotros {
-    grid-area: titulonosotros;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(115, 119, 123, 1) 100%, rgba(0, 212, 255, 1) 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.menu {
-    grid-area: menu;
-}
-
-.imgnosotros {
-    grid-area: imgnosotros;
-    padding-top: 60px;
-    width: 500px;
-}
-
-section img {
-    width: 500px;
-    height: 334px;
-}
-
-.subnosotros {
-    color: beige;
-    text-decoration: underline;
-}
-
-.txtnosotros {
-    grid-area: txtnosotros;
-    padding-left: 50px;
-    padding-top: 60px;
-    text-align: center;
-    color: #c8c8c8;
-}
-
-.footer {
-    grid-area: footer;
-}
-
-#nosotros {
-    display: inline-block;
-}
-
-.p {
-    padding: 10px;
-    margin: 10px;
-    margin-left: 25px;
-}
-
-#textonosotros {
-    padding: 20px;
-    text-align: center;
-}
-
-/* FIN PAGINA NOSOTROS*/
-
-.contenedor {
-    display: flex;
-}
-
-.imagencompañia {
-    max-width: 70%;
-    max-height: 80px;
-}
-
-/* INICIO PAGINA INDEX*/
-
-.paginaindex {
-    display: grid;
-    grid-template-columns: 200px 890px 250px;
-    grid-template-rows: 150px 400px 400px 200px;
-    grid-template-areas:
-        "titulo titulo titulo"
-        "menu secindex aside"
-        "menu secindex2 aside"
-        "footer footer footer"
-}
-
-.tituloprincipal {
-    grid-area: titulo;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(115, 119, 123, 1) 100%, rgba(0, 212, 255, 1) 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.menu {
-    grid-area: menu;
-}
-
-.aside {
-    grid-area: aside;
-}
-
-aside img {
-    width: 250px;
-    height: 890px;
-}
-
-.secindex {
-    grid-area: secindex;
-    background-color: #25316D;
-}
-
-.subindex {
-    color: #c8c8c8;
-    text-align: center;
-}
-
-.pindex {
-    color: #c8c8c8;
-    text-align: left;
-}
-
-.sec2 {
-    color: #c8c8c8;
-}
-
-.secindex2 img {
-    grid-area: secindex2;
-}
-
-.footer {
-    grid-area: footer;
-}
-
-/* FIN PAGINA INDEX*/
 
 
 /* RESPONSIVE DESIGN*/
@@ -321,48 +206,8 @@ aside img {
     }
 }
 
-/* FIN RD NOSOTROS*/
 
-
-
-/* INICIO BOOTSTRAP*/
-
-body {
-    background-color: rgb(204, 199, 199);
-}
-
-/* INICIO BARRA DE NAVEGACION BOOTSTRAP*/
-
-.bg-grey {
-    background-color: #25316D
-}
-
-.navbar-nav .nav-link.active,
-.navbar-nav .show>.nav-link {
-    color: white;
-}
-
-.nav-link {
-    color: white;
-    font-size: 20px;
-}
-
-.logo {
-    border-radius: 30px;
-}
-
-.navbar-nav {
-    --bs-nav-link-hover-color: rgb(129, 129, 129);
-}
-
-.navbar-nav {
-    --bs-nav-link-hover-color: rgb(129, 129, 129);
-}
-
-/* FIN BARRA DE NAVEGACION BOOTSTRAP*/
-
-
-/* INICIO FOOTER BOOTSTRAP*/
+/* INICIO FOOTER*/
 
 .anchoFooter {
     margin-top: 30px;
@@ -386,7 +231,6 @@ footer {
 }
 
 .redes {
-
     display: inline-block;
 }
 
@@ -426,7 +270,7 @@ footer {
     color: #8a3ab9;
 }
 
-/* FIN FOOTER BOOTSTRAP*/
+/* FIN FOOTER*/
 
 /* INICIO CONTENIDO NOSOTROS BOOTSTRAP*/
 
