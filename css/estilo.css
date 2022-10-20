@@ -127,10 +127,6 @@ nav ul a:hover {
     margin-bottom: 12px;
 }
 
-/* INICIO PAGINA NOSOTROS*/
-
-
-
 /* RESPONSIVE DESIGN*/
 
 
@@ -272,7 +268,7 @@ footer {
 
 /* FIN FOOTER*/
 
-/* INICIO CONTENIDO NOSOTROS BOOTSTRAP*/
+
 
 .card {
     --bs-card-border-width: none;
@@ -283,7 +279,10 @@ footer {
     --bs-card-spacer-x: 2rem;
 }
 
-/* FIN CONTENIDO NOSOTROS BOOTSTRAP*/
+.formulario {
+    padding: 40px;
+}
 
-
-/* FIN BOOTSTRAP*/
+.contacto {
+    text-align: center;
+}
